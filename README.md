@@ -2,7 +2,7 @@
 This repo contains sample files and an introduction on how to use Github for beginners.
 
 ## Table of contents
-* [Setting up github](https://github.com/revolutionariestech/github-introduction/edit/main/README.md#set-up-github)
+* [Setting up github](#set-up-github)
 * [Creating a repository](https://github.com/revolutionariestech/github-introduction/edit/main/README.md#create-repo)
 * [Cloning/Adding to a repository](#git-repository)
 * [Branching and Merging](#install-git)
