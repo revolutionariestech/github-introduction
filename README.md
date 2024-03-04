@@ -2,8 +2,8 @@
 This repo contains sample files and an introduction on how to use Github for beginners.
 
 ## Table of contents
-* [Setting up github](#set-up-github)
-* [Creating a repository](#create-repo)
+* [Setting up github](https://github.com/revolutionariestech/github-introduction/edit/main/README.md#set-up-github)
+* [Creating a repository](https://github.com/revolutionariestech/github-introduction/edit/main/README.md#create-repo)
 * [Cloning/Adding to a repository](#git-repository)
 * [Branching and Merging](#install-git)
 * [Contributing](#contributing)
@@ -55,15 +55,22 @@ This repo contains sample files and an introduction on how to use Github for beg
 #### Git Repository
 ##### Clone Repo onto computer: This will make a local copy of the repo on your computer
 1. Go to the repository you want to clone
-2. Click back on the green "<> Code" tab
+2. Click on the green "<> Code" tab
 3. Copy the URL displayed
 4. Go to your terminal and navigate to a folder that you would like this project to sit in
 5. Type `git clone <URL LINK>` into the command line
 
 ##### Create and Upload files to repository in github
 1. Click on the "+" button and either create or upload a new file
-2. Once the files are uploaded/created you need to commit your changes (this is important)
-3. 
-4.
-5. 1. Find a file on your desktop that you want to add to your repository
-6. Put it into the cloned repo folder on your computer
+2. Once the files are uploaded/created you need to commit your changes with a commit message (usually describes what changes were made)
+3. When you want to update/edit a file click on the file, then click on the pen/pencil icon and make your edits, then commit your changes with a new commit message
+
+##### Create and Upload files to repository from computer
+1. Find/create a file that you want to add to your repository and put/save it to the cloned repo folder on your computer
+2. In the terminal navigate to the folder of the repository where the new file is
+3. Follow these 3 steps in order to add the file to the repo:
+   - `git add <filename>`: adds files that are pushed to github
+   - `git commit -m "<commit message>"`
+   - `git push`: this pushes files to github
+4. To update an existing file in the repository on git repeat step 3 again (Ex: Each time you add more code to a file thats in the repo folder, using VS Code or another text editor, repeat step 3)
+
