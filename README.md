@@ -140,8 +140,24 @@ You can use forks to propose changes related to fixing a bug, you can:
 3. Click the green "Create a fork" button at the bottom
 4. After you fork a repo, in order for it to exist locally on your computer you can go through the steps of cloning it
 
-##### Configuring Git to sync your fork with the upstream repository
-> When you fork a project in order to propose changes to the upstream repo, configure Git to pull changes from the upstream repo into the local clone of your fork
+##### Creating a pull request (for the main repo to get your changes made on the forked repo)
+> Create a pull request to propose changes to a repo. These changes are proposed in a branch, which can then be chosen to merge with.
+
+*ON the Forked repo:*
+1. On the forked repository click on "Pull requests" button at the top
+2. Click on the Green "Compare & pull request" button (then make sure the base and compare branches are correct)
+3. Write a title and description (optional) for your pull request
+4. Click on the green "Create pull request" button at the bottom
+
+*ON the Main repo:*
+1. On the main repository click on the "Pull requests" button at the top
+2. It will show you the number of pull requests submitted, click on the one you want to merge with
+3. In the specific pull request you can see what was changed in "Files changed"
+4. Then to merge click on the green "Merge pull request" button
+5. Then click on the green "Confirm merge" button
+6. The main repo should now be updated with the contents/changed files of the forked repo
+
+
 ---
 #### <ins>Git Commands</ins>
 >Here are some other basic/helpful git commands for terminal (includes commands from above too)
