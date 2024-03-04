@@ -2,11 +2,14 @@
 >This repo contains sample files and an introduction on how to use Github for beginners.
 
 ## Table of contents
-* [Setting up github](#set-up-github)
-* [Creating a repository](#create-repo)
-* [Cloning/Adding to a repository](#git-repository)
+* [Setting up GitHub](#set-up-github)
+* [Creating a Repository](#create-repo)
+* [Cloning/Adding to a Repository](#git-repo)
 * [Branching and Merging](#branch-and-merge)
+* [Fork a Repository](#fork-repo)
 * [Basic/Other git commands](#git-commands)
+
+
 ---
 #### <ins>Set Up Github</ins>
 ##### Creating a github account
@@ -28,6 +31,7 @@
   - run linux/ubuntu
   - type `sudo apt install git` in the command line
 
+
 ---
 #### <ins>Create Repo</ins>
 ##### Create repo in Github
@@ -37,7 +41,7 @@
 4. Click on the green "New" button to create a new repository
 5. Create a repository name and give the repo a short description if you want
 6. Make it Public/Private depending on the project and personal preference (can change this later)
-7. You can add a ReadMe file now, or create it later ([What is a README](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes))
+7. You can add a ReadMe file (What this is) now, or create it later ([What is a README](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes), [Basic writing and formatting syntax for README](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax))
 8. Press the green "Create repository" button
 
 ##### Add Collaborators
@@ -51,7 +55,7 @@
 
 
 ---
-#### <ins>Git Repository</ins>
+#### <ins>Git Repo</ins>
 ##### Clone Repo onto computer: This will make a local copy of the repo on your computer
 1. Go to the repository you want to clone
 2. Click on the green "<> Code" tab
@@ -67,13 +71,14 @@
 ##### Create and Upload files to repository (Using terminal)
 1. Find/create a file that you want to add to your repository and put/save it to the cloned repo folder on your computer
 2. In the terminal navigate to the folder of the repository where the new file is
-3. Follow these 3 steps in order to add the file to the repo:
+3. Follow these 3 steps in this order to add the file to the repo:
    - `git add <filename>`: adds files that are pushed to github
    - `git commit -m "<commit message>"`
    - `git push`: this pushes files to github
 4. To update an existing file in the repository on git repeat step 3 again (Ex: Each time you add more code to a file thats in the repo folder, using VS Code or another text editor, repeat step 3)
 5. If a collaborator adds to the repository and pushes their changes, in order to get the updated version on your computer use the command `git pull`
    - if you're working on a repository with collaborators it's good habit to use `git pull` before making changes and push whenever you make changes to avoid conflicts
+
 
 ---
 #### <ins>Branch and Merge</ins>
@@ -102,9 +107,41 @@
    - Merge branch1 into main (you're on the main branch): `git merge branch1`
 - If you have multiple collaborators that each create their own branch everything needs to be merged to the main first then you're individual branch
    - Say user1 creates a branch called "user1" and user2 creates a branch called "user2".
-      - If user1 makes a change and pushes it onto their branch (user1), they then need to merge "user1" into "main" and push the changes (`git checkout main` then `git merge user1` then `git push`)
-      - Then user2 needs to pull from "main" and merge those changes onto their branch (user2) (`git checkout main` then `git pull` then `git checkout user2` then `git merge main`)
+      - If user1 makes a change and pushes it onto their branch (user1), they then need to merge "user1" into "main" and push the changes
+        ```
+        - git checkout main
+        - git merge user1
+        - git push
+        ```
+      - Then user2 needs to pull from "main" and merge those changes onto their branch (user2)
+        ```
+        - git checkout main
+        - git pull
+        - git checkout user2
+        - git merge main
+        - git push
+        ```
 
+
+---
+#### <ins>Fork Repo</ins>
+> A fork is a new repository that shares code and visibility settings with the original “upstream” repo.
+
+> Forks are used to propose changes to the main repository.
+
+You can use forks to propose changes related to fixing a bug, you can:
+- Fork the repository
+- Make the fix
+- Submit a pull request to the project owner
+
+##### How to fork a repo ([More on Forking](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo?platform=windows&tool=webui))
+1. In the top-right corner of the repo's page, click "Fork"
+2. You can then change the name, owner, and description to your desire of this "forked" repo
+3. Click the green "Create a fork" button at the bottom
+4. After you fork a repo, in order for it to exist locally on your computer you can go through the steps of cloning it
+
+##### Configuring Git to sync your fork with the upstream repository
+> When you fork a project in order to propose changes to the upstream repo, configure Git to pull changes from the upstream repo into the local clone of your fork
 ---
 #### <ins>Git Commands</ins>
 >Here are some other basic/helpful git commands for terminal (includes commands from above too)
@@ -125,3 +162,5 @@
 - `git pull`: update local repo
    - `git pull origin <branch name>`: pull changes from remote repo
   
+---
+[GitHub Docs](https://docs.github.com/en): To read and learn more about github
